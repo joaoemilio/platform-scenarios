@@ -44,3 +44,20 @@ This docker setup demonstrates WSO2 Micro Integrator usage as explained in [EI D
 11. To stop the services execute the following command.
    ```bash
    docker-compose down
+   ```
+   
+# Windows 10 Home Instructions
+
+## How to run
+
+1. Install docker-toolbox into your setup environment
+2. Create a folder c:\wso2 
+3. Open Oracle Virtual Box and share folder created above
+
+  ```bash
+    ## Below command will build and run the full setup.
+    docker run 
+      -p 9090:9090 \
+      --mount type=bind,source=/wso2/platform-scenarios/micro-integrator-sample/v1.0.0/msf4j-setup/resources/microservices,target=/home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/deployment/microservices/ \
+      docker.wso2.com/wso2ei-msf4j:6.4.0
+  ```
