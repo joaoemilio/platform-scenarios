@@ -9,8 +9,17 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
 ```
 ## Caso tenha a distribuição Windows 10 Professional, utilize o suporte nativo para docker
 ```
-2. Create a folder c:\wso2 
+2. Crie uma pasta c:\wso2 para baixar esse repositório. Isso vai ajudar a montar os volumes / mounts dos containers docker
+  ```bash
+    ## Por exemplo, ao executar esse comando no docker quickstart terminal, você conseguirá fazer o deploy de um microservice utilizando a imagem oficial WSO2 apontando para o diretório onde fizer o git clone
+    docker run 
+      -p 9090:9090 \
+      --mount type=bind,source=/wso2/platform-scenarios/micro-integrator-sample/v1.0.0/msf4j-setup/resources/microservices,target=/home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/deployment/microservices/ \
+      docker.wso2.com/wso2ei-msf4j:6.4.0
+  ```
+
 3. Open Oracle Virtual Box and share folder created above
+<img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg" height="50%" width="50%">
 ![alt text](https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg)
 
   ```bash
