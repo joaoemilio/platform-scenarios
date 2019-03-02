@@ -5,7 +5,7 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
    
 ## Instruções para Windows 10 Home 
 
-1. Faça o Download e Instale o [docker-toolbox]("https://docs.docker.com/toolbox/toolbox_install_windows/)
+1. Faça o Download e Instale o [docker-toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/)
 ```
 ## Caso tenha a distribuição Windows 10 Professional, utilize o suporte nativo para docker
 ```
