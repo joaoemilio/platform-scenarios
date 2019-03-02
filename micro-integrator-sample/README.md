@@ -24,4 +24,4 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instruÃ
 4. Abra o Docker QuickStart Terminal
 > Repare que a primeira linha do terminal depois da baleia mostra o IP em que seus containers vÃ£o rodar.
 
-<img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/docker-quistart-terminal.jpg" height="50%" width="50%">
+<img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/docker-quickstart-terminal.jpg" height="50%" width="50%">
