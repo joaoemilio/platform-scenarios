@@ -8,7 +8,7 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru√
 1. Install docker-toolbox into your setup environment
 2. Create a folder c:\wso2 
 3. Open Oracle Virtual Box and share folder created above
-![alt text](https://raw.githubusercontent.com/joaoemilio/platform-scenarios/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg)
+![alt text](https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg)
 
   ```bash
     ## Below command will build and run the full setup.
