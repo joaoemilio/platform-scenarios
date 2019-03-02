@@ -1,10 +1,25 @@
-# Micro Integrator Sample Setup
-This docker setup demonstrates WSO2 Micro Integrator usage as explained in [EI Documentation](https://docs.wso2.com/display/EI640/Sending+a+Simple+Message+to+a+Service+Using+the+Micro+Integrator)
+# Micro Integrator - Demo Setup
+Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instruções da documentação oficial do WSO2 Enterprise Integrator [EI Documentation](https://docs.wso2.com/display/EI640/Sending+a+Simple+Message+to+a+Service+Using+the+Micro+Integrator)
 
-## Versions
-* [**v1.0.0**](v1.0.0) - Setup using EI 6.4.0
+# Como Executar essa Demo?
+   
+## Instruções para Windows 10 Home 
 
-## How to run
+1. Install docker-toolbox into your setup environment
+2. Create a folder c:\wso2 
+3. Open Oracle Virtual Box and share folder created above
+![alt text](https://raw.githubusercontent.com/joaoemilio/platform-scenarios/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg)
+
+  ```bash
+    ## Below command will build and run the full setup.
+    docker run 
+      -p 9090:9090 \
+      --mount type=bind,source=/wso2/platform-scenarios/micro-integrator-sample/v1.0.0/msf4j-setup/resources/microservices,target=/home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/deployment/microservices/ \
+      docker.wso2.com/wso2ei-msf4j:6.4.0
+  ```
+
+## Instruções para Mac ou Linux 
+
 1. Install docker into your setup environment
 2. Clone this Git repository. If you need to download **only** this demo scenario follow [this blog](http://amalg-blogs.blogspot.com/2017/12/github-clone-only-sub-directory-of.html).
 3. Depending on the demo version you choose to run, download the desired **wso2ei-x.x.x.zip**
@@ -45,19 +60,4 @@ This docker setup demonstrates WSO2 Micro Integrator usage as explained in [EI D
    ```bash
    docker-compose down
    ```
-   
-# Windows 10 Home Instructions
 
-## How to run
-
-1. Install docker-toolbox into your setup environment
-2. Create a folder c:\wso2 
-3. Open Oracle Virtual Box and share folder created above
-
-  ```bash
-    ## Below command will build and run the full setup.
-    docker run 
-      -p 9090:9090 \
-      --mount type=bind,source=/wso2/platform-scenarios/micro-integrator-sample/v1.0.0/msf4j-setup/resources/microservices,target=/home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/deployment/microservices/ \
-      docker.wso2.com/wso2ei-msf4j:6.4.0
-  ```
