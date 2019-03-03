@@ -8,24 +8,24 @@
 	},
 	"item": [
 		{
-			"name": "micro-integrator-sample-proxy-service",
-			"request": {
-				"url": "",
-				"method": "GET",
-				"header": [],
-				"body": {},
-				"description": "micro-integrator-sample"
-			},
-			"response": []
-		},
-		{
 			"name": "micro-integrator-sample-micro-service",
 			"request": {
-				"url": "http://192.168.99.100:9090/healthcare/surgery",
+				"url": "http://localhost:9090/healthcare/surgery",
 				"method": "GET",
 				"header": [],
 				"body": {},
 				"description": "micro-integrator-sample-micro-service"
+			},
+			"response": []
+		},
+		{
+			"name": "micro-integrator-sample-proxy-service",
+			"request": {
+				"url": "http://localhost:8290/healthcare/querydoctor/surgery",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "micro-integrator-sample-proxy-service"
 			},
 			"response": []
 		}

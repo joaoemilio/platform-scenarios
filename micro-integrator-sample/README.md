@@ -18,8 +18,13 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
       docker.wso2.com/wso2ei-msf4j:6.4.0
      ```
 
-3. Abra a GUI do Oracle Virtual Box e compartilhe com a Virtual Machine "default" a pasta criada acima
+3. Abra a GUI do Oracle Virtual Box e faça as seguintes configurações:
+
+   3.1 - Compartilhe com a Virtual Machine "default" a pasta criada acima
    <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg" height="50%" width="50%">
+
+   3.2 - Nessa mesma VM, altere as configurações de Rede para apontar as portas 8290 e 9090 do seu computador para redirecionar para as portas que os containers vão abrir na VM
+   
 
 4. Abra o Docker QuickStart Terminal
    > Repare que a primeira linha do terminal, depois da baleia, mostra o IP em que seus containers vão rodar. Quando usamos Windows 10 Home, não podemos utilizar, por exemplo: http://localhost/meusite, pois o container host é uma máquina virtual Oracle Virtual Box ou Hyper-V com um IP específico
