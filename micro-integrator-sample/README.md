@@ -29,7 +29,7 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
     <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/virtualbox-port-forwarding-2.jpg" height="50%" width="50%">
 
 4. Abra o Docker QuickStart Terminal
-   > Repare que a primeira linha do terminal, depois da baleia, mostra o IP em que seus containers vão rodar. Quando usamos Windows 10 Home, não podemos utilizar, por exemplo: http://localhost/meusite, pois o container host é uma máquina virtual Oracle Virtual Box ou Hyper-V com um IP específico
+   > Repare que a primeira linha do terminal, depois da baleia, mostra o IP em que seus containers vão rodar. Quando usamos Windows 10 Home, não podemos utilizar, por exemplo: http://localhost/meusite, pois o container host é uma máquina virtual Oracle Virtual Box ou Hyper-V com um IP específico. No passo #3 o que fizemos foi redirecionar os requests do localhost nas portas 8290 e 9090 para esse IP.
 
    <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/docker-quickstart-terminal.jpg" height="75%" width="75%">
 
