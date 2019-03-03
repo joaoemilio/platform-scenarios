@@ -1,0 +1,24 @@
+version: '3.2'
+
+services:
+  msf4j-service:
+    image: docker.wso2.com/wso2ei-msf4j:6.4.0
+    ports:
+      - 9090:9090
+    volumes: 
+      - type: bind
+        source: ${DIR}/microservices/
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/msf4j/deployment/microservices/
+  microei-service:
+    image: docker.wso2.com/wso2ei-micro-integrator:6.4.0
+    depends_on:
+      - msf4j-service
+    ports:
+      - 8290:8290
+      - 8253:8253
+    volumes: 
+      - type: bind
+        source: ${DIR}/carbonapps/SampleServicesCompositeApplication_1.0.0.car
+        target: /home/wso2carbon/wso2ei-6.4.0/wso2/micro-integrator/repository/deployment/server/carbonapps/SampleServicesCompositeApplication_1.0.0.car
+
+#        source: /wso2/platform-scenarios/micro-integrator-sample/msf4j-setup/resources/microservices/

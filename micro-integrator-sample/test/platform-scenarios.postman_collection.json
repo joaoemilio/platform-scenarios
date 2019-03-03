@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "platform-scenarios",
+		"_postman_id": "ad739fb8-d0b6-4233-616a-42342b8182c4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "micro-integrator-sample-proxy-service",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "micro-integrator-sample"
+			},
+			"response": []
+		},
+		{
+			"name": "micro-integrator-sample-micro-service",
+			"request": {
+				"url": "http://192.168.99.100:9090/healthcare/surgery",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "micro-integrator-sample-micro-service"
+			},
+			"response": []
+		}
+	]
+}
