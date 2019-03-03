@@ -1,4 +1,4 @@
-# Micro Integrator Simple Service Demo
+# WSO2 Micro Integrator: Simple Proxy Service Demo
 Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instruções da documentação oficial do WSO2 Enterprise Integrator [EI Documentation](https://docs.wso2.com/display/EI640/Sending+a+Simple+Message+to+a+Service+Using+the+Micro+Integrator)
 
 ## Como Executar essa Demo?
@@ -24,7 +24,9 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
    <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/oracle-virtual-box-shared-folder.jpg" height="50%" width="50%">
 
    3.2 - Nessa mesma VM, altere as configurações de Rede para apontar as portas 8290 e 9090 do seu computador para redirecionar para as portas que os containers vão abrir na VM
-   
+    <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/virtualbox-port-forwarding-1.jpg" height="50%" width="50%">
+
+    <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/virtualbox-port-forwarding-2.jpg" height="50%" width="50%">
 
 4. Abra o Docker QuickStart Terminal
    > Repare que a primeira linha do terminal, depois da baleia, mostra o IP em que seus containers vão rodar. Quando usamos Windows 10 Home, não podemos utilizar, por exemplo: http://localhost/meusite, pois o container host é uma máquina virtual Oracle Virtual Box ou Hyper-V com um IP específico
