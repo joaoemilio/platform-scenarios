@@ -34,19 +34,19 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
    <img src="https://raw.githubusercontent.com/joaoemilio/platform-scenarios/master/micro-integrator-sample/images/docker-quickstart-terminal.jpg" height="75%" width="75%">
 
 5. Navegue até a pasta criada no passo #2 e clone o repositório
-    > **PowerShell** (No Terminal do Visual Studio Code ou abra o Windows PowerShell pelo menu iniciar)
-    ```powershell
+    > **Docker QuickStart Terminal**
+    ```bash
     cd /c/wso2/
     git clone https://github.com/joaoemilio/platform-scenarios
     ```
 6. Entre no diretório referente ao demo do WSO2 Micro Integrator
-    > **PowerShell** (No Terminal do Visual Studio Code ou abra o Windows PowerShell pelo menu iniciar)
-    ```powershell
+    > **Docker QuickStart Terminal**
+    ```bash
     cd platform-scenarios/micro-integrator-sample
     ```
 7. Abra o arquivo .env que está no diretório e altere a variável DIR para a pasta em que você está
     > Para saber o caminho completo, vá no Docker QuickStart Terminal e digite o comando:
-    ```
+    ```bash
     pwd
     ```
     
