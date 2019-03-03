@@ -44,7 +44,7 @@ Esse exemplo demonstra como utilizar o WSO2 Micro Integrator seguindo as instru�
     ```bash
     cd platform-scenarios/micro-integrator-sample
     ```
-7. Abra o arquivo .env que está no diretório e altere a variável DIR para a pasta em que você está
+7. Abra o arquivo **_.env_** que está no diretório e altere a variável DIR para a pasta em que você está
     > Para saber o caminho completo, vá no Docker QuickStart Terminal e digite o comando:
     ```bash
     pwd
